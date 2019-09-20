@@ -62,8 +62,8 @@ public function getAllSegment(Request $request)
    $user->addSelect('column1','column2');
    ```
    
-### Writing where clause
-#### Boost up your query writing skill with eloquent to know different type of use of where clause
+## Writing where clause
+### Boost up your query writing skill with eloquent to know different type of use of where clause
    ```php
    $model = Model::where('age',20); // where age = 20
    $model->where(age,'<',20); // where age < 20
