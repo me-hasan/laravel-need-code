@@ -1,6 +1,8 @@
 # Ajax
+```php
 Route::POST('/getAllSegment/team', 'TeamController@getAllSegment')->name('get.all.segment');
 
+```javascript
 $(document).on('change', '#process', function()
 {
     var id = $(this).val();
@@ -14,7 +16,7 @@ $(document).on('change', '#process', function()
     });
 });
 
-
+```php
 public function getAllSegment(Request $request)
 {
     dd($request->input('id'));
