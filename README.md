@@ -23,3 +23,28 @@ public function getAllSegment(Request $request)
     dd($request->input('id'));
 }
 ```
+
+# Eloquent Relation
+1. One to One :
+             hasOne
+
+
+2. Inverse One to One : 
+            belongsTo
+
+
+3. One to Many :
+             hasMany
+
+
+4. Many to Many (By PIVOT) :
+            belongsToMany
+
+
+5. Has Many Through : (Join Three table)
+            hasManyThrough
+
+
+6. Polymorphic Relation 
+   main model === morphTo
+   accessible model = morphMany   
