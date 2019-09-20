@@ -132,8 +132,8 @@ public function getAllSegment(Request $request)
    });
    ```
    
-### join your model with whatever you want
-#### Don't be stress to join with a model to another table,model,query query builder gives us opportunity to do different types of joining.
+## join your model with whatever you want
+### Don't be stress to join with a model to another table,model,query query builder gives us opportunity to do different types of joining.
    ```php
    $model = Model::query();
    $model->join('table2','model.id','=','model.user_id');
@@ -146,7 +146,7 @@ public function getAllSegment(Request $request)
        $q->on('O.id','=','K.name')
    })
    ```
-#### Use of Ordering, Grouping, Limit, Offset
+## Use of Ordering, Grouping, Limit, Offset
    ```php
    $query = Model::query();
    $query->orderBy('column1','asc')->orderBy('column2','desc');
